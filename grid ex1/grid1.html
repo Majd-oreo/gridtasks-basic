@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_1 grid
+    </title>
+    <style>
+        
+        .con{
+            display: grid;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(28,1fr);
+            gap: 10px;
+         
+
+        }
+        .black{
+            background-color: black;
+            
+            box-sizing: border-box;
+            border: none;
+            grid-column: 1 / 15;
+            grid-row: 1/5;
+
+        }
+        .orange{
+            background-color: orange;
+           
+            box-sizing: border-box;
+            border: none;
+            grid-column: 1/ 10;
+             grid-row: 5 / 20;
+
+
+
+        }
+        .green{
+            background-color: green;
+            box-sizing: border-box;
+            border: none;
+            grid-column: 10/15;
+            grid-row: 5/20;
+
+
+        }
+        .blue{
+            background-color: blue;
+            box-sizing: border-box;
+            border: none;
+            grid-column:1/15 ;
+            grid-row: 20/28;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">    
+        <div class="black">1</div>
+        <div class="orange">2</div>
+        <div class="green">3</div>
+        <div class="blue"></div>
+      
+
+</div>
+</body>
+</html>
