@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 8px;
+            grid-template-areas: "1 2 3 4"
+                                "5 6 7 8";
+                            
+        grid-auto-flow: column;
+
+        }
+        .item1 , .item2 , .item3 , .item4 , .item5 , .item6 , .item7, .item8{
+            box-sizing: border-box;
+            background-color: yellow;
+            height: 70px;
+            width: 360px;
+            align-content: center;
+            text-align: center;
+            
+            
+        }
+.item1{
+    grid-column: 4 ;
+    grid-row: 2;
+}
+        .item3{
+grid-column: 1;
+grid-row: 1;
+        }
+.item4{
+    grid-column: 3;
+    grid-row: 1;
+}
+.item5{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.item6{
+    grid-column: 4;
+    grid-row: 1;
+}
+.item7{
+    grid-column: 1;
+    grid-row: 2;
+}
+.item8{
+    grid-column: 2;
+    grid-row: 2;
+}
+    </style>
+</head>
+<body>
+    <h1>What do you think!<h1>
+    <div class="grid" >
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+
+    </div>
+    
+</body>
+</html>
