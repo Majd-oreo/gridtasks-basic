@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <style>
+        body{
+            background-color: rgb(147, 147, 33);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            
+            
+        }
+        .grid{
+            box-sizing: border-box;
+            border: none;
+            background-color: rgb(59, 174, 174);
+            display: grid;
+            grid-template-columns: repeat(4,70px);
+            grid-template-rows: repeat(5, 1fr);
+            justify-content: center;
+            width: 40%;
+            height: 400px;
+            gap: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .first{
+          
+            box-sizing: border-box;
+            border: none;
+            background-color: white;
+            grid-column: 1 / 5;
+            grid-row: 1;
+            align-content: center;
+            text-align: center;
+            box-shadow: 4px 4px 3px 0px rgba(69, 68, 68, 0.75);
+
+        }
+        .button{
+            align-content: center;
+            box-sizing: border-box;
+            border: none;
+            background-color: white;
+            text-align: center;
+            box-shadow: 4px 4px 3px 0px rgba(69, 68, 68, 0.75);
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="first"></div>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button" style="background-color: rgb(200, 200, 32);">+</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button"  style="background-color: rgb(200, 200, 32);">-</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button" style="background-color: rgb(200, 200, 32);">*</div>
+        <div class="button" style="background-color: rgb(203, 92, 92);">c</div>
+        <div class="button">0</div>
+        <div class="button">=</div>
+        <div class="button" style="background-color: rgb(200, 200, 32);" >/</div>
+
+
+    </div>
+</body>
+</html>
